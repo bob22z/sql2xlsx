@@ -1,0 +1,18 @@
+[package]
+name = "sql2xlsx"
+version = "0.1.0"
+authors = ["Bob <bob22.zhang@gmail.com>"]
+edition = "2021"
+license = "MIT"
+description = "Export SQL query to excel file"
+documentation = "https://docs.rs/sql2xlsx"
+repository = "https://github.com/bob22z/sql2xlsx"
+keywords = ["sql", 'excel', 'xlsx']
+
+[dependencies]
+dotenvy = "0.15"
+clap = { version = "4", features = ['derive'] }
+rust_xlsxwriter = "0.46"
+postgres = "0.19"
+toml = "0.7"
+serde = { version = "1", features = ['derive'] }
